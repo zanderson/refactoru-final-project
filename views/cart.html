@@ -1,0 +1,91 @@
+<!-- Page title -->
+      <div class="page-title">
+         <div class="container">
+            <h3></i>Shopping Cart</small></h3>
+            <hr />
+         </div>
+      </div>
+      <!-- Page title -->
+      
+      <!-- Page content -->
+      
+      <div class="view-cart blocky">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+               
+                  <!-- Table -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Quantity</th>
+                          <th>Unit Price</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="product in products">
+                          <!-- Index -->
+                          <td>1</td>
+                          <!-- Product  name -->
+                          <td>{{product.productName}}</td>
+                          <!-- Quantity with refresh and remove button -->
+                          <td>
+                            <div class="input-group">
+                              <span>{{product.qty}}</span>
+                              <span class="input-group-btn">
+                                <button ng-click="removeProduct(product)" class="btn btn-default btn-sm" type="button"></i>-</button>
+                                <button ng-click="addProduct(product)" class="btn btn-success btn-sm"></i>+</button>
+                              </span>
+                            </div>
+                          </td>
+                          <!-- Unit price -->
+                          <td>${{product.price}}</td>
+                          <!-- Total cost -->
+                          <td>${{product.price * product.qty}}</td>
+                        </tr>
+                                                       
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          
+                          <th></th>
+                          <th>Total</th>
+                          <th>${{total}}</th>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                     <div class="sep-bor"></div>
+                     <!-- Discount Coupen -->
+                      <h5 class="title">Discount Coupon</h5>
+                      <hr />
+                      
+                      <form class="form-inline" role="form">
+                         <div class="form-group">
+                           <input type="discount" class="form-control" id="discount" placeholder="Discount Coupon">
+                         </div>
+                         <button type="submit" class="btn btn-success">Apply</button>
+                      </form>
+                      
+                      <hr />
+                      
+                     <!-- Button s-->
+                    <div class="row">
+                      <div class="span4 offset8">
+                        <div class="pull-right">
+                          <a href="#/search" class="btn btn-default">Continue Shopping</a>
+                          <a href="#/checkout" class="btn btn-success">CheckOut</a>
+                        </div>
+                      </div>
+                    </div>
+
+               
+               </div>
+            </div>
+         </div>
+         <br />
+      </div>
+     

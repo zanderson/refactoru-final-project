@@ -1,0 +1,37 @@
+{
+  "name": "farmers-market-app",
+  "version": "1.0.0",
+  "description": "final project at RefactorU",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanderson/refactoru-final-project.git"
+  },
+  "keywords": [
+    "farmers",
+    "market",
+    "refactoru",
+    "demo",
+    "day",
+    "app",
+    "ecommerce"
+  ],
+  "author": "zoe anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zanderson/refactoru-final-project/issues"
+  },
+  "homepage": "https://github.com/zanderson/refactoru-final-project#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "~1.0.0"
+  }
+}
