@@ -1,3 +1,5 @@
+@font-face { font-family: VTCSuperMarketSaleRegular.ttf; src: url('.fonts/VTCSuperMarketSaleRegular.ttf'); }
+
 .jumbotron {
     position: relative;
     background: #000 url("/images/veggies2.jpg") center center no-repeat;
@@ -17,7 +19,7 @@
 }
 
 body {
-    height: 100%;
+  height: 100%;
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -78,11 +80,11 @@ form {
 /* Logo & Navigation */
 
 .header{
-   height:70px;
-    max-width: 100%;
-   background: #76bd1d;
-   border-top:4px solid #5a9116;
-   border-bottom:1px solid white;
+  height:70px;
+  max-width: 100%;
+  background: #76bd1d;
+  border-top:4px solid #5a9116;
+  border-bottom:1px solid white;
 }
 
 .logo {
@@ -93,6 +95,9 @@ form {
   text-decoration: none;
   border:0px;
 }
+
+@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
+@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf');
 
 .logo a:hover{
    color:#fff;
