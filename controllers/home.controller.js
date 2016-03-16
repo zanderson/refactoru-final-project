@@ -1,10 +1,10 @@
 angular.module('FarmApp')
-	.controller('HomeController', ['$scope', '$location',
-  	function ($scope, $location) {
-   //Do things here like check authentication
-
-   //Redirect to the new location regardless of if it has anchor name
-   $scope.linkTo = function(id) {
-     $location.url(id);
-   }
+	.controller('HomeController', ['$scope', '$location', '$anchorScroll', 
+  	function ($scope, $location, $anchorScroll) {
+  	
+  	$scope.scrollTo = function(id) {
+    $location.hash(id);
+    console.log($location.hash());
+    $anchorScroll();
+  };
  }]);

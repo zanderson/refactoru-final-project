@@ -4,7 +4,7 @@ angular.module('FarmApp')
     console.log('hello', $routeParams.id)
 		$http({
   		method: 'GET',
-  		url: '/api/products/' + productId
+  		url: 'http://localhost:3000/api/products/' + productId
 	}).then(function successCallback(response) {
 
 		$scope.product = response.data;

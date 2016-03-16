@@ -210,5 +210,17 @@
         "weight": "1 lb",
         "from": "Dexter's Farm",
         "image": "/images/products/blood-orange.jpg"
+    },
+    {
+        "id": 1128,
+        "produce": "Juice",
+        "productType": "Juice",
+        "productName": "Berry Juice Bundle",
+        "productDescription": "This bundle contains a variety of all the best fruit and veg the season has to offer, grown by the lovely people at Wild Country Organics in Cambridgeshire. Containing a mix of spinach, kale, beetroot, carrots and parsley, this box packed full of goodness is ready for you to whizz into a wonderfully healthy juice or smoothie.",
+        "price": 17.99,
+        "tags": ["orange", "organic"],
+        "weight": "1 bundle",
+        "from": "Dexter's Farm",
+        "image": "/images/products/strawb-juicing.jpg"
     }
 ]

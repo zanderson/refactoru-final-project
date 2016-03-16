@@ -168,6 +168,11 @@ app.post('/login', function(req, res, next){
     })(req, res, next);
 })
 
+app.get('/logout', function(req, res){
+    req.logout()
+    res.redirect('/')
+})
+
 
 // 2 kinds of middleware
 // app.use is like 'vertical middleware'. They get evaluated from top to bottom.
@@ -184,7 +189,7 @@ app.get('/api/me', function(req, res){
 })
 
 // Creating Server and Listening for Connections \\
-var port = 80
+var port = 3000
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 

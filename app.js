@@ -53,6 +53,11 @@ angular.module('FarmApp')
 				controller  : 'DashboardController'  // name of angular CONTROLLER to use with the template
 			})
 
+			// .when('/logout', {
+			// 	templateUrl : '/views/home.html', // route on SERVER where the template file lives
+			// 	controller  : 'LogoutController'  // name of angular CONTROLLER to use with the template
+			// })
+
 			.when('/orderconfirmation', {
 				templateUrl : '/views/order-confirmation.html', // route on SERVER where the template file lives
 				controller  : 'HomeController'  // name of angular CONTROLLER to use with the template

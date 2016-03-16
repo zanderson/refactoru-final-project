@@ -4,8 +4,10 @@ angular.module('FarmApp')
 		$scope.total = cartService.total;
 		$scope.addProduct = function(product) {
 			cartService.addProduct(product);
+			$scope.total = cartService.total;
 		}
 		$scope.removeProduct = function(product) {
 			cartService.removeProduct(product);
+			$scope.total = cartService.total;
 		}
 }]);

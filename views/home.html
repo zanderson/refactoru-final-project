@@ -6,7 +6,7 @@
     <h1>Bringing the <br/>Farmers Market<br/>to You</h1>
     <p>Get delicious food directly from the best local producers</p>
     <div class="buttons">
-      <button type="button" class="btn btn-secondary btn-lg"><a href="">How it works</a></button></form>
+      <button type="button" class="btn btn-secondary btn-lg"><a ng-click="scrollTo('how')">How it works</a>
       <form><a href="#/search"><button type="button" class="btn btn-success btn-lg">Start shopping</button></a>
     </div>
     </div>
@@ -17,25 +17,25 @@
       <!-- Example row of columns -->
       
       <div class="row">
-      <h3 class="featured"><a name="HowItWorks">HOW IT WORKS</a></h3>
+      <h3 class="featured" id="how">HOW IT WORKS</h3>
         <div class="col-md-4">
           
           <a class="thumbnail">
-      <img src="/images/youorder.jpg" alt="...">
+      <img src="/images/youorder.jpg" alt="You Order">
     </a>
           <p class="howitworks">Shop online the freshest produce from local farmers! We're always open! </p>
         </div>
         <div class="col-md-4">
           
           <a class="thumbnail">
-      <img src="/images/prepare.jpg" alt="...">
+      <img src="/images/prepare.jpg" alt="Farmers Prepare">
     </a>
 
           <p class="howitworks">The producers get to work digging, baking and catching to get your order ready.</p>
        </div>
         <div class="col-md-4">
           <a class="thumbnail">
-      <img src="/images/electric-car.jpg" alt="...">
+      <img src="/images/electric-car.jpg" alt="We Deliver">
     </a>
 
           <p class="howitworks">We deliver to your home via our amazing little electric vans at a time and day chosen by you, for free.</p>
@@ -78,7 +78,11 @@
 
   </div><!-- id myCarousel -->
   <br /><br />
+
+
 </div>  <!-- row -->
+
 </div> <!-- container -->
+
 </div> <!-- container -->
-   
+

@@ -44,7 +44,7 @@
                           <!-- Unit price -->
                           <td>${{product.price}}</td>
                           <!-- Total cost -->
-                          <td>${{product.price * product.qty}}</td>
+                          <td>${{product.price * product.qty | number:2}}</td>
                         </tr>
                                                        
                         <tr>
@@ -53,7 +53,7 @@
                           
                           <th></th>
                           <th>Total</th>
-                          <th>${{total}}</th>
+                          <th>${{total | number:2}}</th>
                         </tr>
                       </tbody>
                     </table>

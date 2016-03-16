@@ -29,7 +29,6 @@
   <script type="text/javascript" src="/controllers/dashboard.controller.js"></script>
   <script type="text/javascript" src="/controllers/header.controller.js"></script>
 
-
   <!-- Font awesome CSS -->
   <link href="/css/font-awesome.min.css" rel="stylesheet">   
 
@@ -96,12 +95,13 @@
             </form>
           <!-- END SEARCH BAR -->
         </div>
-
+<!-- data-toggle="modal"  -->
         <div class="col-md-4 col-sm-4">
           <div class="kart-links">
-              <a href="#/login">Login</a> 
+              <a href="#/login" ng-show="!email">Login</a>
+              <a href="/logout" ng-show="email">Logout</a> 
               <a href="#/create-an-account">Signup</a>
-              <a data-toggle="modal" href="#cart"><img src="/images/green-cart.png" class="cart">  {{value}}</a>
+              <a href="#cart"><img src="/images/green-cart.png" class="cart">  {{value}}</a>
           </div>
         </div>
       </div>
