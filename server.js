@@ -19,7 +19,11 @@ var passport = require('passport')
 // Create Express App Object \\
 
 
-mongoose.connect('mongodb://localhost/FarmApp')
+mongoose.connect('mongodb://bfmarket/FarmApp')
+
+mongoose.connection.on('error', function (err) {
+    console.log("connection error", err)
+})
 
 var productCtrl = require('./api/controllers/productCtrl.js')
 
