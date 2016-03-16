@@ -16,11 +16,12 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose')
 var passport = require('passport')
-var productCtrl = require('./api/controllers/productCtrl.js')
 // Create Express App Object \\
 
 
 mongoose.connect('mongodb://localhost/FarmApp')
+
+var productCtrl = require('./api/controllers/productCtrl.js')
 
 var userSchema = mongoose.Schema({
   name: {
