@@ -19,7 +19,7 @@ var passport = require('passport')
 // Create Express App Object \\
 
 
-mongoose.connect('mongodb://127.0.0.1/FarmApp')
+mongoose.connect('mongodb://localhost/FarmApp')
 
 mongoose.connection.on('error', function (err) {
     console.log("connection error", err)
