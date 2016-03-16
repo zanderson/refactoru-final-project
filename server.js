@@ -136,13 +136,19 @@ app.isAuthenticated = function(req, res, next){
 app.post('/create-an-account', function(req, res){
     console.log(req.body)
     bcrypt.genSalt(11, function(error, salt){
+            console.log('salt')
+
         bcrypt.hash(req.body.password, salt, function(hashError, hash){
+            console.log('hash')
+
             var newUser = new User({
                 name: req.body.name,
                 email: req.body.email,
                 password: hash,
             });
+            console.log('made a user')
             newUser.save(function(saveErr, user){
+                console.log('saaved a user')
                 if ( saveErr ) { res.send({ err:saveErr }) }
                 else {
                     req.login(user, function(loginErr){
