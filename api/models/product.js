@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/FarmApp');
-
 var ProductSchema = new mongoose.Schema({
 	id: Number,
 	produce    : String,

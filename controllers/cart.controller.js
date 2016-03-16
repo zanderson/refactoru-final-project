@@ -1,5 +1,6 @@
 angular.module('FarmApp')
 	.controller('CartController', ['$scope', 'cartService', function($scope, cartService){
+		$scope.email = '';
 		$scope.products = cartService.products;
 		$scope.total = cartService.total;
 		$scope.addProduct = function(product) {

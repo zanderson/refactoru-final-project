@@ -29,7 +29,7 @@ angular.module('FarmApp')
 
 	$scope.addToCart = function(product){
 		cartService.addProduct(product);
-		$scope.$parent.refresh();
+		$scope.$parent.header.refresh();
 	};
 
 	$scope.filterProducts = function(product) {

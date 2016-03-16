@@ -34,7 +34,7 @@
 
 </head>
 
-<body ng-controller="HeaderController">
+<body ng-controller="HeaderController as header">
 <!-- Shopping cart Modal -->
      <div ng-controller="CartController" class="modal fade" id="cart" tabindex="-1" role="dialog" aria-hidden="true">
        <div class="modal-dialog">
@@ -88,8 +88,8 @@
             <form class="navbar-form navbar-left" role="search">    
               <div class="form-group" style="display:inline;">
                 <div class="input-group">
-                  <input ng-model="searchText" type="text" class="form-control" placeholder="Search...">
-                  <span class="input-group-addon"><span ng-click="search()" class="glyphicon glyphicon-search"></span></span>
+                  <input ng-model="header.searchText" type="text" class="form-control" placeholder="Search...">
+                  <span class="input-group-addon"><span ng-click="header.search()" class="glyphicon glyphicon-search"></span></span>
                 </div>
               </div>
             </form>
@@ -98,10 +98,11 @@
 <!-- data-toggle="modal"  -->
         <div class="col-md-4 col-sm-4">
           <div class="kart-links">
-              <a href="#/login" ng-show="!email">Login</a>
-              <a href="/logout" ng-show="email">Logout</a> 
+
+              <a href="#/login" ng-show="!header.email">Login</a>
+              <a href="/logout" ng-show="header.email">Logout</a> 
               <a href="#/create-an-account">Signup</a>
-              <a href="#cart"><img src="/images/green-cart.png" class="cart">  {{value}}</a>
+              <a href="#cart"><img src="/images/green-cart.png" class="cart">  {{header.value}}</a>
           </div>
         </div>
       </div>

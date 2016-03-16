@@ -1,7 +1,7 @@
 angular.module('FarmApp')
 	.controller('ItemController', ['$scope', 'cartService', '$routeParams', '$http', function ItemController ($scope, cartService, $routeParams, $http){
 		var productId = $routeParams.id;
-    console.log('hello', $routeParams.id)
+    // console.log('hello', $routeParams.id)
 		$http({
   		method: 'GET',
   		url: '/api/products/' + productId
@@ -18,6 +18,6 @@ angular.module('FarmApp')
   
   $scope.addToCart = function(product){
   cartService.addProduct(product);
-  $scope.$parent.refresh();
+  $scope.$parent.header.refresh();
   };
 }]);
