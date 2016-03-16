@@ -16,7 +16,7 @@ angular.module('FarmApp')
 	// Simple GET request example:
 		$http({
   		method: 'GET',
-  		url: 'http://localhost:3000/api/products'
+  		url: '/api/products'
 	}).then(function successCallback(response) {
 		$scope.products = response.data
 
