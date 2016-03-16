@@ -18,6 +18,7 @@ angular.module('FarmApp')
   		method: 'GET',
   		url: '/api/products'
 	}).then(function successCallback(response) {
+		console.log("products from server", response.data)
 		$scope.products = response.data
 
     // this callback will be called asynchronously

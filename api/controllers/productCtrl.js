@@ -18,6 +18,7 @@ console.log('hello', req.params)
 	else {
 		Product.find({}, function(err, docs){
 			// Find will ALWAYS give you back an array, even if it finds one or none
+			console.log("server get products", docs)
 			res.send(docs)
 		})
 	}
