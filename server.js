@@ -20,7 +20,7 @@ var productCtrl = require('./api/controllers/productCtrl.js')
 // Create Express App Object \\
 
 
-mongoose.createConnection('mongodb://localhost/FarmApp')
+mongoose.connect('mongodb://localhost/FarmApp')
 
 var userSchema = mongoose.Schema({
   name: {
