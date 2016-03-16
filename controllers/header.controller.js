@@ -1,6 +1,6 @@
 angular.module('FarmApp')
       .controller('HeaderController', ['$scope', '$location', 'cartService', function($scope, $location, cartService) {
-           $scope.email = '';
+           // $scope.email = '';
    
            $scope.searchText = '';
            $scope.search = function(){
