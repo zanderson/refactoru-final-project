@@ -1,5 +1,14 @@
 // Requires 
 var express = require('express');
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/FarmApp')
+
+mongoose.connection.on('error', function (err) {
+    console.log("connection error", err)
+})
+
+
 var app = express();
 /** Express Session Setup **/
 var session = require('express-session');
@@ -14,16 +23,11 @@ app.use(app.sessionMiddleware)
 
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var mongoose = require('mongoose')
+
 var passport = require('passport')
 // Create Express App Object \\
 
 
-mongoose.connect('mongodb://localhost/FarmApp')
-
-mongoose.connection.on('error', function (err) {
-    console.log("connection error", err)
-})
 
 var productCtrl = require('./api/controllers/productCtrl.js')
 
@@ -200,7 +204,7 @@ app.get('/api/me', function(req, res){
 })
 
 // Creating Server and Listening for Connections \\
-var port = 80
+var port = 3000
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 
