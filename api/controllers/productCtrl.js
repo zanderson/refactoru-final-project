@@ -1,4 +1,5 @@
 var Product = require('../models/product.js')
+var ProductList = require('../../products.json')
 // console.log('product model', Product)
 
 function getProducts (req, res){
@@ -19,12 +20,12 @@ function getProducts (req, res){
 	// Get MANY
 	else {
 		console.log("find products")
-
-		Product.find({}, function(err, docs){
-			// Find will ALWAYS give you back an array, even if it finds one or none
-			console.log("server get products", docs)
-			res.send(docs)
-		})
+		res.send(ProductList)
+		// Product.find({}, function(err, docs){
+		// 	// Find will ALWAYS give you back an array, even if it finds one or none
+		// 	console.log("server get products", docs)
+		// 	res.send(docs)
+		// })
 	}
 }
 
