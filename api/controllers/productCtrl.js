@@ -1,7 +1,8 @@
 var Product = require('../models/product.js')
 console.log('product model', Product)
+
 function getProducts (req, res){
-console.log('hello', req.params)
+	console.log('hello', req.params)
 
 	// Populate allows us to turn that into the full Document
 
