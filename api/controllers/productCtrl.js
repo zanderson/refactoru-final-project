@@ -10,12 +10,16 @@ function getProducts (req, res){
 	// console.log('params', req.params)
 	var defaultPop = 'products'
 	if(req.params.productID){
-		Product.findOne({_id : req.params.productID})
+		// Product.findOne({_id : req.params.productID})
 
-			.populate(defaultPop)
-			.exec(function(err, doc){
-				res.send(doc)
-			})
+		// 	.populate(defaultPop)
+		// 	.exec(function(err, doc){
+		// 		res.send(doc)
+		// 	})
+		var prod = ProductList.filter(function(product){
+			return product.id === +req.params.productID
+		})
+		res.send(prod[0])
 	}
 	// Get MANY
 	else {
