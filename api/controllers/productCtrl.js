@@ -1,4 +1,4 @@
-var Product = require('../models/user.js')
+var Product = require('../models/product.js')
 // console.log('product model', Product)
 
 function getProducts (req, res){
@@ -20,7 +20,7 @@ function getProducts (req, res){
 	else {
 		console.log("find products")
 
-		Product.findOne({}, function(err, docs){
+		Product.find({}, function(err, docs){
 			// Find will ALWAYS give you back an array, even if it finds one or none
 			console.log("server get products", docs)
 			res.send(docs)

@@ -31,23 +31,7 @@ var passport = require('passport')
 
 var productCtrl = require('./api/controllers/productCtrl.js')
 var User = require('./api/models/user.js')
-// var userSchema = mongoose.Schema({
-//   name: {
-//     type: String,
-//     required: true,
 
-//   },
-//   email: {
-//     type: String,
-//     required: true,
-//     unique: true
-//   },
-//   password: {
-//     type: String,
-//     required: true
-//   }
-// });
-// var User = mongoose.model('user', userSchema);
 
 // APPLICATION CONFIGURATION
 app.use(logger('dev'));
