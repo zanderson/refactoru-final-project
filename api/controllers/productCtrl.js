@@ -1,4 +1,4 @@
-var Product = require('../models/product.js')
+var Product = require('../models/user.js')
 // console.log('product model', Product)
 
 function getProducts (req, res){
