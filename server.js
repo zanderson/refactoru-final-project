@@ -2,7 +2,9 @@
 var express = require('express');
 var mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/FarmApp')
+mongoose.connect('mongodb://localhost/FarmApp', function(err){
+    console.log('DB ERR', err)
+})
 
 mongoose.connection.on('error', function (err) {
     console.log("connection error", err)
