@@ -87,10 +87,10 @@ form {
 }
 
 .logo {
-  color: white;
-  font-family: VTCSuperMarketSale;
-  font-size: 35px;
-  margin-top: 20px;
+ /* color: white;*/
+  /*font-family: VTCSuperMarketSale;
+  font-size: 35px;*/
+  margin-top: 15px;
   text-decoration: none;
   border:0px;
 }
