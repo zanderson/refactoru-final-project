@@ -28,6 +28,7 @@ var passport = require('passport')
 // Create Express App Object \\
 
 
+var Product = require('./api/models/product.js')
 
 var productCtrl = require('./api/controllers/productCtrl.js')
 var User = require('./api/models/user.js')
